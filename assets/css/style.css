@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* HEADER */
+.title {
+    background-color: black;
+    height: 73px;
+    text-align: center;
+}
+
+.title h1 {
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 7px auto;
+}
+
+/* BANNER */
+.container__banner {
+    background-color: black;
+}
+
+.banner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* INFO */
+.container__info {
+    background-color: black;
+}
+
+.info {
+    min-height: 348px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flow-root;
+}
+
+.info p {
+    font-size: 16px;
+    font-weight: 300;
+    white-space: pre-line;
+    width: 475px;
+    display: inline-block;
+    margin: 76px 106px 75px 150px;
+}
+
+.info img {
+    width: 399px;
+    float: right;
+    margin: 45px 150px 66px 0px;
+}
+
+/* FEATURES */
+.container__features {
+    background-color: #1E1A13;
+}
+
+.features {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    display: flow-root;
+}
+
+.features h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 75px auto 50px;
+}
+
+.fbox {
+    width: 23%;
+    display: inline-block;
+}
+
+.features i {
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.features h3 {
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 74px;
+}
+
+/* GALLERY */
+
+.container__gallery {
+    background-color: black;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.photo {
+    display: inline-block;
+    margin: 73px 8px;
+}
+
+.gallery img {
+    height: 202px;
+    width: 316px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+.container__footer {
+    background-color: #1E1A13;
+}
+
+.footer {
+    height: 102px;
+    text-align: center;
+    display: flow-root;
+}
+
+.footer p {
+    font-size: 20px;
+    font-weight: 300;
+    white-space: normal;
+    margin: 39px auto;
+}
+
+.footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .info p {
+        max-width: 90%;
+        display: block;
+        margin: 76px auto 75px;
+    }
+    
+    .info img {
+        max-width: 90%;
+        float: none;
+        display: block;
+        margin: 0 auto 75px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .photo {
+        display: block;
+        margin: 25px auto;
+    }
+    
+    .gallery img {
+        width: 399px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .fbox {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
